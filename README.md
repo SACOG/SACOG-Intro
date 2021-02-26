@@ -16,7 +16,11 @@ To help save you time, figure out what kind of user you are:
 
 
 ## Learning Git and GitHub
-This 
+There are many resources to learn the Git language and GitHub. Some good starting points include:
+* [GitHub's Git Handbook](https://guides.github.com/introduction/git-handbook/#repository) is a great starting point to learn to most common Git commands and about Git itself.
+    - FYI, if you are note used to command line, you may want to get [GitHub Desktop](https://desktop.github.com/)
+* [GitImmersion.com](https://gitimmersion.com/) is a great, hands-on way to learn Git on the command line
+* GitHub's [Hello World](https://guides.github.com/activities/hello-world/) exercise is a hands-on way to learn how to work with GitHub
 
 
 ## Contribution Guidelines
