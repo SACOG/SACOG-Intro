@@ -2,11 +2,13 @@
 An introduction to using SACOG's GitHub
 
 ## Table of Contents
-[Start Here](##Start-Here)
+[Start Here](#Start-Here)
 
-[Learning Git and GitHub](##Learning-Git-and-GitHub)
+[Learning Git and GitHub](#Learning-Git-and-GitHub)
 
-[Contribution Guidelines](##Contribution-Guidelines)
+[Contribution Guidelines](#Contribution-Guidelines)
+
+
 
 
 
@@ -37,4 +39,4 @@ There are many resources to learn the Git language and GitHub. Some good startin
 
 ## Contribution Guidelines
 
-To keep SACOG's GitHub organized, user-friendly, and easy to navigate, we ask that any contributors who add content (code, documentation, repositories, or comments) do so in line with the [SACOG GitHub Use Guidelines](https://github.com/SACOG/SACOG-Intro/blob/main/SACOG-GitHub-Use-Guidlines.md)
+To keep SACOG's GitHub organized, user-friendly, and easy to navigate, we ask that any contributors who add content (code, documentation, repositories, or comments) do so in line with the [SACOG GitHub Use Guidelines](https://github.com/SACOG/SACOG-Intro/blob/main/SACOG-GitHub-Use-Guidelines.md)

@@ -1,8 +1,13 @@
-# Guide Version Information
+# SACOG GitHub Usage Guide
+
+
+## Guide Version Information
 
 -   Last updated: February, 2020
 
 -   Updated by: Darren Conly
+
+
 
 # Purpose of This Guide
 
@@ -25,6 +30,7 @@ users with organization questions such as:
 
 -   When should I commit changes?
 
+
 ## What this guide is NOT
 
 This guide is NOT intended to teach how to use git. As described above,
@@ -41,6 +47,8 @@ include:
 
 -   <https://gitimmersion.com/> - in-depth learn-by-doing set of
     exercises to learn git on the command line
+
+
 
 # What goes into a repository?
 
@@ -65,6 +73,8 @@ The following types of files can or should be in GitHub repositories:
     sets on it. As a workaround it is better to provide documentation on
     how to easily access the data through other means (e.g. SACOG Open
     Data Portal, process to gain FTP access, etc.)
+
+
 
 ## Documentation Guidelines
 
@@ -96,6 +106,8 @@ online conversion tools (e.g.
 [Pandoc](https://pandoc.org/) is also a neat command-line tool for
 converting docx to md (and lots of other conversions).
 
+
+
 ## What should NOT go into a repository
 
 -   *BIG (\>500KB) data files* -- GitHub is not meant to store large
@@ -105,6 +117,8 @@ converting docx to md (and lots of other conversions).
     access, etc.).
 
 -   *Files that are not relevant to the repository*
+
+
 
 # When should I create a new repository?
 
@@ -157,6 +171,8 @@ general guidance**:
         will reduce the number of repositories and make the agency
         GitHub page easier to navigate.
 
+
+
 # How should I organize my repository?
 
 The goal of organizing repositories consistently and logically is to
@@ -166,6 +182,8 @@ Achieving this will vary across repositories, but some general
 guidelines to follow include:
 
 -   
+
+
 
 # Conventions for Branching
 
@@ -192,20 +210,22 @@ There are a number of potential workflows for git, but for most SACOG
 repositories, the best workflow would be the [GitHub
 Flow](https://guides.github.com/introduction/flow/) model. Using this
 model, any time you want to change something in the repository, be it
-for a bug fix, adding a new feature, etc., you create a new branch \>
+for a bug fix, adding a new feature, etc., you create a new branch,
 make edits and do testing in the branch, then once you've finished
 testing, you merge the branch back into the main version, making your
 changes "official" in the deployable working version.
 
 ### Branch naming conventions
 
-When naming your branch, please use the convention *\<your
-initials\>-\<descriptive name\>*. E.g., for the SACSIM repository, if I
+When naming your branch, please use the convention *<your
+initials>/<descriptive name>*. E.g., for the SACSIM repository, if I
 make a change to a series of scripts that make the ILUT summary, I would
-create a branch and name it dc-ilut-update.
+create a branch and name it "dc/ilut-update".
 
 With this system, we can keep track of who is making changes and what
-those changes are
+those changes are. Further more, the backslash format enables you to make "branches of branches". E.g., if I want to make a sub-branch of my "dc/ilut-update" branch that's named "testing", I would name it "dc/ilut-update/fix-loader". Note, however, that this is only *if* you have a use case that requires sub-branching.
+
+
 
 ## When should I merge a branch?
 
@@ -220,6 +240,8 @@ make it the main version of the code."
 After making updates and testing, you can merge to the main branch,
 which makes your changes part of the main, deployable version of the
 code.
+
+
 
 ## When should I delete a branch?
 
@@ -236,7 +258,19 @@ GitHub \> then push the local version of the testing branch to GitHub,
 the testing branch will be re-created on GitHub. So if you really want
 to delete a branch, you have to do so both locally and on GitHub.
 
+
+
 # When should I commit changes?
+Each time you commit, you're creating a checkpoint in the Git history, a place that you can "rewind" to if you make mistakes in the future. If you do not make commits frequently enough, you risk having to "rewind" to a very distant point in time if you mess something up. If you commit too frequently, you make the commit/change log very long and less easy to navigate. 
+
+So short answer is that there is no fixed rule for committing. But these are some general times it would be good to commit your changes:
+* When you have successfully added a new feature or change to code
+* After making significant changes
+* At the end of the day
+* You made a change you want to share on GitHub
+
+
+
 
 # References
 
