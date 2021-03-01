@@ -181,8 +181,6 @@ documentation they're looking for, without having to ask for help.
 Achieving this will vary across repositories, but some general
 guidelines to follow include:
 
--   
-
 
 
 # Conventions for Branching
@@ -217,13 +215,15 @@ changes "official" in the deployable working version.
 
 ### Branch naming conventions
 
-When naming your branch, please use the convention *<your
-initials>/<descriptive name>*. E.g., for the SACSIM repository, if I
+When naming your branch, please use the convention *\<your
+initials>/\<descriptive name>*. E.g., for the SACSIM repository, if I
 make a change to a series of scripts that make the ILUT summary, I would
 create a branch and name it "dc/ilut-update".
 
 With this system, we can keep track of who is making changes and what
 those changes are. Further more, the backslash format enables you to make "branches of branches". E.g., if I want to make a sub-branch of my "dc/ilut-update" branch that's named "testing", I would name it "dc/ilut-update/fix-loader". Note, however, that this is only *if* you have a use case that requires sub-branching.
+
+
 
 
 
