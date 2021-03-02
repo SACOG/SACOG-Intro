@@ -1,0 +1,26 @@
+"""
+Name:<scriptname>.py
+Purpose: <purpose description>
+        
+          
+Author: Darren Conly
+Last Updated: <date>
+Updated by: <name>
+Copyright:   (c) SACOG
+Python Version: 3.x
+"""
+
+
+For SQL:
+/*
+Name:<name>.sql
+Purpose: 
+           
+Author: Darren Conly
+Last Updated: <date>
+Updated by: <name>
+Copyright:   (c) SACOG
+SQL Flavor: SQL Server
+*/
+
+
