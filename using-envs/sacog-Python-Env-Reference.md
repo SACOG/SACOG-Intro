@@ -21,6 +21,54 @@ If the above doesn't describe you, or if you don't have access to ESRI modules, 
 
 ## Setting up your python environment
 [Conda](https://docs.conda.io/en/latest/) is a great package manager and is the system that ArcGIS Pro uses to manage all of the python practices we at SACOG are likely to use for our many data analysis tasks. 
+
+### Most common conda commands (Using ArcGIS Pro's Python Command Prompt)
+Below are some of the most common conda commands. For a full list of common conda commands, check out [conda's cheat sheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
+
+NOTE that these commands use windows syntax. For Mac OS or Linux please refer to conda documentation.
+
+List out conda environments (the starred environment is your current environment)
+
+`conda env list`
+
+
+
+
+Switch to a different environment
+
+`activate <env name>`
+
+
+
+Create a new, empty conda environment
+
+`conda create --name <env name>`
+
+
+
+
+Create a new conda environment as a clone of a conda environment
+
+`conda create --clone <env you want to clone> --name <name of clone env>`
+
+
+
+List out installed packages in current environment
+
+`conda list`
+
+
+
+
+Install new python package
+
+`conda install <package name>`
+
+
+
+
+### More resources for conda environment and package management
+
 *  If you're at SACOG and installed ArcGIS Pro on your machine, you should start with [ESRI's documentation on using conda and package management](https://developers.arcgis.com/python/guide/understanding-conda/)
 *  [Conda documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/index.html)
 
