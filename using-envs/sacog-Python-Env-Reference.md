@@ -77,16 +77,27 @@ Install new python package
 ### Commonly-used python packages for SACOG tasks
 The table below lists packages we commonly use for data analysis that are not part of the standard set of packages that comes with ESRI's default conda environment.
 
-| Package Name | Distribution | Description
-|---------------------|---------------|-------------
-| dbfread | conda | reads DBF files into pandas dataframe, CSV, etc.
-| geopandas | conda | Allows pandas dataframes with geometry capabilities
-| plotly | conda | Rich suite of visualization tools
+| Package Name       | Distribution | Description and Notes                                        |
+| ------------------ | ------------ | ------------------------------------------------------------ |
+| dbfread            | conda        | Converting DBF to CSV and pandas df                          |
+| sqlalchemy         | conda        | Run SQL Server commands--needed for exporting pandas df to SQL table |
+| swifter            | pip          | Speeds up pandas df.apply() tasks                            |
+| plotly             | conda        | Visualization                                                |
+| geopandas          | conda        | Open source tool that converts GeoJSON and SHPs to pandas-like dataframes with geometry attribute |
+| python-orca        | conda        | Needed to export plotly charts as static images (PNG, etc)   |
+| fuzzywuzzy         | pip          | Fuzzy string similarity measurement--measures how similar two strings are |
+| python-levenshtein | pip          | Speeds up fuzzywuzzy for large data sets. Requires C++ be installed. Can be downloaded through https://visualstudio.microsoft.com/downloads/ |
+| statsmodels        | conda        | Needed for doing statistical analyses of plotly charts (e.g. adding trendlines) |
+| fastparquet        | conda        | Required for reading/writing parquet files with pandas.      |
+| pyarrow            | conda        | Needed if you want to export big pandas dfs to parquet format using snappy compression |
+| python-snappy      | conda        | Needed if you want to export big pandas dfs to parquet format using snappy compression |
+
 
 
 
 
 ## Troubleshooting
+
 ### Cannot load arcpy module
 If you can successfully load most other python modules but not the arcpy module trying to `import arcpy` (e.g., you get an `ImportError`), it often means that you recently updated ArcGIS Pro and the only way to correct this issue is to make a new clone of the ESRI default environment (as of March 2021, the default environment is named arcgispro-py3). To do this:
 
