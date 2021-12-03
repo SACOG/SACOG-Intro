@@ -91,6 +91,7 @@ The table below lists packages we commonly use for data analysis that are not pa
 | fastparquet        | conda        | Required for reading/writing parquet files with pandas.      |
 | pyarrow            | conda        | Needed if you want to export big pandas dfs to parquet format using snappy compression |
 | python-snappy      | conda        | Needed if you want to export big pandas dfs to parquet format using snappy compression |
+| jupyterlab         | conda        | Improved, latest (as of Dec 2021) way to load, edit, and interact with python notebooks (.ipynb files) |
 
 
 
