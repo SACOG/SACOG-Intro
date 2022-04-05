@@ -1,0 +1,27 @@
+WHY YOU WANT TO USE THIS:
+Example: you committed a file with a password to the remote location.
+
+REFERENCE
+https://rtyley.github.io/bfg-repo-cleaner/
+
+JAVA FILE DOWNLOADED (VERSION WILL VARY)
+...\bfg-1.14.0.jar
+
+
+CREATE MIRROR REPO
+>>>will create your-repo.git subfolder in the folder you're currently in
+git clone --mirror <clone URL for affected repo>
+
+
+REMOVE FILE FROM HISTORY
+java -jar .../bfg-1.14.0.jar --delete-files file_to_delete your-repo.git 
+
+PRUNE AND CLEAN
+cd your-repo.git (NOT the repo itself, the repo.git mirror you created)
+git reflog expire --expire=now --all && git gc --prune=now --aggressive
+Then, from inside your-repo.git folder, run git push
+
+REMOVE OLD CLONES
+At this point (after running "prune and clean"), the remote repo should have all versions of file erased from the git history,
+but local copy will still have the unwanted files. So remove the local clones and
+re-clone the remote to the local.
