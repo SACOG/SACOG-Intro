@@ -70,7 +70,7 @@ Install new python package
 ### More resources for conda environment and package management
 
 *  If you're at SACOG and installed ArcGIS Pro on your machine, you should start with [ESRI's documentation on using conda and package management](https://developers.arcgis.com/python/guide/understanding-conda/)
-*  [Conda documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/index.html)
+*  For more details on Conda beyond ESRI's intro to it, check out the [Conda documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/index.html)
 
 
 
