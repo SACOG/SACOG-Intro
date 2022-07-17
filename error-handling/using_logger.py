@@ -37,10 +37,10 @@ example_logfile = 'example_logfile.log'
 # what and how you want to format the logged message.
 # lots of potential attributes you can log, e.g. timestamtp, error level number, etc.
 #full list of attributes you can log: https://docs.python.org/3/library/logging.html#logrecord-attributes
-output_format = "%(levelname)s: %(msg)s %(asctime)s"
+output_format = "%(levelname)s: %(msg)s | %(asctime)s | log called on line %(lineno)d"
 
 logging.basicConfig(
-    filename=None, # output log file. If None will print to console
+    filename=None, # output log file. If None will print to console.
     filemode='w', # either 'a' (append) or 'w' (overwrite) the log content to the file. 
     level=logging.DEBUG, # what level/severity of messages you want logged. See above for details.
     format=output_format, # how you want to format output.
