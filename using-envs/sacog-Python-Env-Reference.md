@@ -85,13 +85,14 @@ The table below lists packages we commonly use for data analysis that are not pa
 | plotly             | conda        | Visualization                                                |
 | geopandas          | conda        | Open source tool that converts GeoJSON and SHPs to pandas-like dataframes with geometry attribute |
 | python-orca        | conda        | Needed to export plotly charts as static images (PNG, etc)   |
-| fuzzywuzzy         | pip          | Fuzzy string similarity measurement--measures how similar two strings are |
-| python-levenshtein | pip          | Speeds up fuzzywuzzy for large data sets. Requires C++ be installed. Can be downloaded through https://visualstudio.microsoft.com/downloads/ |
+| fuzzywuzzy         | conda          | Fuzzy string similarity measurement--measures how similar two strings are |
+| python-levenshtein | conda          | Speeds up fuzzywuzzy for large data sets. Requires C++ be installed. Can be downloaded through https://visualstudio.microsoft.com/downloads/ |
 | statsmodels        | conda        | Needed for doing statistical analyses of plotly charts (e.g. adding trendlines) |
 | fastparquet        | conda        | Required for reading/writing parquet files with pandas.      |
 | pyarrow            | conda        | Needed if you want to export big pandas dfs to parquet format using snappy compression |
 | python-snappy      | conda        | Needed if you want to export big pandas dfs to parquet format using snappy compression |
 | jupyterlab         | conda        | Improved, latest (as of Dec 2021) way to load, edit, and interact with python notebooks (.ipynb files) |
+| datatable         | pip        | Faster alternative to pandas.read_csv() for loading large CSV files to pandas dataframes |
 
 
 
