@@ -1,7 +1,8 @@
 """
-Name: remove_rte.py
+Name: remove_files_of_type.py
 Purpose: 
-    Remove all RTE files from model runs recursively.
+    Remove all files with user-specified extension from user-specified folder with option for
+    recursion (deleting from all subfolders as well).
 
 Author: Darren Conly
 Last Updated: Sep 2022
