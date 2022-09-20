@@ -10,3 +10,13 @@ while True:
 
 
 print(f"Great! Thanks for entering the string '{in_s}'")
+
+
+def check_input(input_val, condition, err_msg=''):
+    while True:
+        if not condition:
+            input_val = input(f'{err_msg}: ')
+            continue
+        else:
+            break
+            return input_val
