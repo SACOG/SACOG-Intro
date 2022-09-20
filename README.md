@@ -1,5 +1,5 @@
 # SACOG-Intro
-An introduction to using SACOG's GitHub
+An introduction to using SACOG's GitHub and repository of broadly usable scripts.
 
 ## Table of Contents
 1. [Start Here](#Start-Here)
