@@ -21,13 +21,15 @@ def delete_files_of_type(folder, file_ext, recursive_delete):
     pathglob = path.rglob("*") if recursive_delete else path.glob("*")
 
     print("You are about to delete the following files:")
+    delcnt = 0
     for i, p in enumerate(pathglob): 
         sub_p = Path(p)
         ftype = sub_p.suffix
         if ftype == file_ext:
             print(f"\t{sub_p}")
+            delcnt += 1
 
-    finish_delete = input(f"Do you wish to eliminate these {i+1} files (enter y/n)? ")
+    finish_delete = input(f"Do you wish to eliminate these {delcnt} files (enter y/n)? ")
     if finish_delete.lower() == 'y':
         pathglob = path.rglob("*") if recursive_delete else path.glob("*") # must remake generator because they can't be "rewound"
         for p in pathglob: 
