@@ -75,7 +75,7 @@ Install new python package
 
 
 ### Commonly-used python packages for SACOG tasks
-The table below lists packages we commonly use for data analysis that are not part of the standard set of packages that comes with ESRI's default conda environment.
+The table below lists packages we commonly use for data analysis that *may not be* part of the standard set of packages that comes with ESRI's default conda environment.
 
 | Package Name       | Distribution | Description and Notes                                        |
 | ------------------ | ------------ | ------------------------------------------------------------ |
