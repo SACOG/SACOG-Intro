@@ -22,23 +22,26 @@ def delete_files_of_type(folder, file_ext, recursive_delete):
 
     print("You are about to delete the following files:")
     delcnt = 0
-    for i, p in enumerate(pathglob): 
+    bytes_consumed = 0
+    files_to_delete = []
+    for p in pathglob: 
         sub_p = Path(p)
         ftype = sub_p.suffix
         if ftype == file_ext:
             print(f"\t{sub_p}")
             delcnt += 1
+            fsize_bytes = sub_p.stat().st_size
+            bytes_consumed += fsize_bytes
+            files_to_delete.append(sub_p)
+
+    print(f"{delcnt} {file_ext} files found consume {bytes_consumed / 1_000_000}MB of space.")
 
     finish_delete = input(f"Do you wish to eliminate these {delcnt} files (enter y/n)? ")
     if finish_delete.lower() == 'y':
-        pathglob = path.rglob("*") if recursive_delete else path.glob("*") # must remake generator because they can't be "rewound"
-        for p in pathglob: 
-            sub_p = Path(p)
-            ftype = sub_p.suffix
-            if ftype == file_ext:
-                os.remove(sub_p)
-                print(f"deleted {sub_p}")
-
+        for f in files_to_delete: 
+            ftype = f.suffix
+            os.remove(f)
+            print(f"deleted {f}")
     else:
         print("Operation aborted by user.")
         sys.exit()
