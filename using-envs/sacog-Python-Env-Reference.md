@@ -66,6 +66,9 @@ Install new python package
 
 
 
+Change the default environment using `proswap`
+
+`proswap <env you want to set as default>`
 
 ### More resources for conda environment and package management
 
