@@ -9,19 +9,12 @@ An introduction to using SACOG's GitHub and repository of broadly usable scripts
 
 
 
-
-
-
-
 ## Start Here
 
 To help save you time, figure out what kind of user you are:
 * If you just want to grab some scripts from SACOG one time and do not care about learning Git, you can just go to any repository, click the "Code" button, and select "Download ZIP" to download a ZIP file containing all files in the repository.
 * Never used Git or GitHub before? Or want to brush up? Check out [Learning Git and GitHub](##Learning-Git-and-GitHub)
 * If you want to contribute to SACOG's GitHub, please follow the [Contribution Guidelines](#Contribution-Guidelines)
-
-
-
 
 
 ## Learning Git and GitHub
@@ -42,3 +35,6 @@ Did you accidentally commit something that had a lot of issues with it? Did you 
 ## Contribution Guidelines
 
 To keep SACOG's GitHub organized, user-friendly, and easy to navigate, we ask that any contributors who add content (code, documentation, repositories, or comments) do so in line with the [SACOG GitHub Use Guidelines](https://github.com/SACOG/SACOG-Intro/blob/main/SACOG-GitHub-Use-Guidelines.md)
+
+### Keeping Sensitive Files Out
+Scripts sometimes need sensitive information, e.g. usernames or passwords to run. The best way to keep these out of GitHub is to store them in a text file with a unique extension like "password.auth". Have the script read the file in order to get the password, and add *.auth to the .gitignore file. This will allow the script to access the password locally but will not publish it to GitHub.
